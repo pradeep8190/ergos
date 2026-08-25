@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Uprising™ is a digital creative production studio based in Milan, Italy. We are designers, we are developers, we are Uprising™">
+    <meta name="keywords" content="uprising, digital, creative, production, company">
+    <meta name="theme-color" content="#000000" />
+    <title>Uprising™ | Digital creative production company</title>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://uprsg-site-v2.vercel.app">
+    <meta name="twitter:title" content="Uprising™ | Digital creative production company">
+    <meta name="twitter:description" content="Uprising™ is a digital creative production studio based in Milan, Italy. We are designers, we are developers, we are Uprising™">
+    <meta name="twitter:image" content="https://uprsg-site-v2.vercel.app/assets/images/uprising-share.png">
+
+    <!-- Meta Facebook Markup -->
+    <meta property="og:url" content="https://uprsg-site-v2.vercel.app" >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Uprising™ | Digital creative production company" >
+    <meta property="og:description" content="Uprising™ is a digital creative production studio based in Milan, Italy. We are designers, we are developers, we are Uprising™" >
+    <meta property="og:image" content="https://uprsg-site-v2.vercel.app/assets/images/uprising-share.png" >
+    <meta property="og:image:width" content="1200" >
+    <meta property="og:image:height" content="630" >
+    <meta property="og:image:type" content="image/png" >
+    
+    <!-- Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/tcj7olj.css"> -->
+    <script type="module" crossorigin src="/assets/index-x5paQ7pk.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-ZVDsBwBb.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-H0uqkCM-.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-stdlib-orAABGcX.js">
+    <link rel="modulepreload" crossorigin href="/assets/fiber-suYchlKZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-4sL86zKL.js">
+    <link rel="modulepreload" crossorigin href="/assets/store-9Foi6fOs.js">
+    <link rel="modulepreload" crossorigin href="/assets/gsap-nk37oyWQ.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-NfxL-M6n.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

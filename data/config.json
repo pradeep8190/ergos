@@ -1,0 +1,1218 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "name": "Home",
+      "scene": "uprising"
+    },
+    {
+      "path": "/ufl",
+      "name": "UFL",
+      "scene": "ufl"
+    },
+    {
+      "path": "/boom-bloom",
+      "name": "Boom & Bloom",
+      "scene": "boombloom"
+    },
+    {
+      "path": "/doublepoint",
+      "name": "Doublepoint",
+      "scene": "doublepoint"
+    },
+    {
+      "path": "/seacat",
+      "name": "Seacat",
+      "scene": "seacat"
+    },
+    {
+      "path": "/planet-farms",
+      "name": "Planet Farms",
+      "scene": "planetfarms"
+    },
+    {
+      "path": "/maria-callas",
+      "name": "Maria Callas",
+      "scene": "mariacallas"
+    },
+    {
+      "path": "/oropress",
+      "name": "Oropress",
+      "scene": "oropress"
+    },
+    {
+      "path": "/igoodi",
+      "name": "Igoodi",
+      "scene": "igoodi"
+    },
+    {
+      "path": "/mausoleum-of-augustus",
+      "name": "Mausoleum",
+      "scene": "mausoleum"
+    },
+    {
+      "path": "/about",
+      "name": "About",
+      "scene": "underground"
+    },
+    {
+      "path": "/showreel",
+      "name": "Showreel",
+      "scene": "showreel"
+    }
+  ],
+  "scenes": [
+    {
+      "uuid": "uprising",
+      "contents": {
+        "subheadline": "We are <b>Uprising</b>™",
+        "headline": "Digital Production<br><b>Duo</b> Toward Innovative<br>And Immersive Projects",
+        "location": "Based in Milan.",
+        "availability": "Available Worldwide."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "uprising.portal",
+          "settings": {
+            "$ref": "settings.portal",
+            "extend": {
+              "intensity": 10
+            }
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 0.38,
+              "opacity": 0.4
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles",
+            "extend": {
+              "count": 40
+            }
+          }
+        },
+        {
+          "name": "BaseModel",
+          "geometry": "uprising.model",
+          "settings": {
+            "$ref": "settings.model",
+            "extend": {
+              "color": "#ffffff",
+              "emissive": "#89dbf8",
+              "emissiveIntensity": 1.35,
+              "metalness": 1,
+              "roughness": 1,
+              "toneMapped": false
+            }
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "ufl",
+      "contents": {
+        "client": "Studiogusto&reg;",
+        "title": "<b>UFL</b>",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "https://www.uflgame.com/",
+        "description": "Master the pitch and rise in the ranks to become the champion of the UFL universe!"
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "ufl.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 0.72
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "AnimatedModel",
+          "geometry": "ufl.model",
+          "animation": "warm-up",
+          "settings": {
+            "$ref": "settings.model",
+            "extend": {
+              "roughness": 0.6
+            }
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/ufl/01.jpg",
+            "source": "cases/ufl.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Football as never experienced before! The world created for the football simulation game UFL is an always-expanding universe full of surprises.",
+          "text2": "We wanted to give UFL a digital presentation both engaging and simple, just like football is.<br><br>We developed an hyper-immersive 3D realtime environment centered on a character that enjoys playing football as much as UFL testimonial, CR7.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/ufl/02.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "<b>Warm up</b> for the big match.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/ufl/03.jpg",
+          "source2": "cases/ufl/04.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "boombloom",
+      "contents": {
+        "client": "Studiogusto&reg;",
+        "title": "Boom<b>&Bloom</b>",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "https://www.boomandbloom.com",
+        "description": "In an era of digital evolution, Boom & Bloom emerges as a catalyst for innovation, a haven for boundless creativity."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "boombloom.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 0.42
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "FlowersModel",
+          "geometry": "boombloom.model",
+          "settings": {
+            "$ref": "settings.model"
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/boom-bloom/01.jpg",
+            "source": "cases/boom-bloom.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Blockchain and NFTs can be very fun! The project for Boom & Bloom focused on creating an immersive gaming experience. ",
+          "text2": "We wanted to match the groundbreaking vision of the brand bringing the game to a playful tech-dream.<br><br>Boom & Bloom website consists in a digital universe rich in 3D details to enjoy interacting with.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/boom-bloom/08.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Welcome<br>to our playground.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/boom-bloom/03.jpg",
+          "source2": "cases/boom-bloom/05.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "doublepoint",
+      "contents": {
+        "client": "Doublepoint",
+        "title": "Double<b>point</b>",
+        "role": "Uprising Role: UX / UI / 3D Production",
+        "link": "https://www.doublepoint.com",
+        "description": "Doublepoint provides future computing platforms more intuitive, robust and versatile interactions."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "doublepoint.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 1.45,
+              "position": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+              }
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "WatchModel",
+          "geometry": "doublepoint.model",
+          "settings": {
+            "$ref": "settings.model"
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/doublepoint/01.jpg",
+            "source": "cases/double-point.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Touch is the key to the future! A product born to expand the possibilities of interaction through effortless gestures.",
+          "text2": "We matched the high-tech vision of Doublepoint creating their own personal digital language, a perfect environment where their technology can thrive.<br><br>We combined different 3D assets to bring their technology into a transdimensional world.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/doublepoint/06.jpg",
+          "source2": "cases/doublepoint/05.jpg"
+        },
+        {
+          "type": "Image",
+          "source": "cases/doublepoint/02.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Just <b>watch</b>,<br>and <b>touch</b>.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/doublepoint/07.jpg",
+          "source2": "cases/doublepoint/08.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "seacat",
+      "contents": {
+        "client": "Studiogusto&reg;",
+        "title": "<b>Seacat</b> by Rossinavi",
+        "role": "UX / UI / 3D Production",
+        "link": "https://seacat.rossinavi.it",
+        "description": "The SeaCat Is A New All-Electric Catamaran Concept, Totally Solar-Powered."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "seacat.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 0.98
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "FloatModel",
+          "geometry": "seacat.model",
+          "settings": {
+            "$ref": "settings.model"
+          },
+          "modifier": {
+            "$ref": "settings.float"
+          }
+        },
+        {
+          "name": "Cables",
+          "settings": {
+            "color": "#111111",
+            "lineWidth": {
+              "mobile": 3,
+              "desktop": 5
+            }
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/seacat/01.jpg",
+            "source": "cases/seacat.mp4"
+          }
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/seacat/06.jpg",
+          "source2": "cases/seacat/04.jpg"
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Board an eco-luxury experience! The exclusive catamaran Seacat by Rossinavi finds its digital soul.",
+          "text2": "We found our way out the complexity of this super yacht by foreseeing its digitalization with brand-new eyes.<br><br>An hyper-tech feeling that brings the user to discover the smallest details of Seacat through special 3D assets.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/seacat/08.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Jump on board.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/seacat/02.jpg",
+          "source2": "cases/seacat/05.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "planetfarms",
+      "contents": {
+        "client": "TBWA",
+        "title": "Planet <b>Farms</b>",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "https://www.planetfarms.ag",
+        "description": "Discover The Largest And Most Innovative Vertical Farm In Europe."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "planetfarms.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 0.42
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "BaseModel",
+          "geometry": "planetfarms.model",
+          "settings": {
+            "$ref": "settings.model"
+          }
+        },
+        {
+          "name": "Leafs",
+          "settings": {
+            "texture": "leaf",
+            "color": "#80ddff",
+            "count": 100
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/planet-farms/01.jpg",
+            "source": "cases/planet-farms.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Taste with the eyes!<br>A work that is meant to titillate and inspire a 3D mouth watering experience.",
+          "text2": "What we focused on for Planet Farms project was to create realistic leaves patterns and packagings.<br><br>We turned their healthy and sustainable vegetables into a visually appealing 3D experience.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/planet-farms/07.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Now go eat your <b>greens.</b>",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/planet-farms/09.jpg",
+          "source2": "cases/planet-farms/04.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "mariacallas",
+      "contents": {
+        "client": "Warner Music LTD",
+        "title": "Maria <b>Callas</b>",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "https://maria-callas.weareuprising.com/en/",
+        "description": "Warner Classics celebrates Maria Callas through the first official website dedicated to La Divina."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "mariacallas.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 1.04
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "FloatModel",
+          "geometry": "mariacallas.model",
+          "settings": {
+            "$ref": "settings.model"
+          },
+          "modifier": {
+            "$ref": "settings.float"
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/maria-callas/01.jpg",
+            "source": "cases/maria-callas.mp4"
+          }
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/maria-callas/05.jpg",
+          "source2": "cases/maria-callas/08.jpg"
+        },
+        {
+          "type": "DoubleText",
+          "text1": "The Diva, the Divina: it’s La Callas! A name who does not need any introduction, and a story to be told in a new way.",
+          "text2": "We presented Warner Classics a project featuring a contemporary retro style of illustration representing Maria Callas life.<br><br>We also experimented an audio visualizer that bring the voice of the soprano to a digital dimension where it can stay forever.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/maria-callas/02.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Sail with<br><b>La Divina</b>.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/maria-callas/07.jpg",
+          "source2": "cases/maria-callas/09.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "oropress",
+      "contents": {
+        "client": "Robilant",
+        "title": "Oro<b>Press</b>",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "https://www.oropress.it",
+        "description": "Explore the vast selection of premium foils and films meticulously curated by Oropress."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "oropress.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 1.03
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "InstancedModel",
+          "geometry": "oropress.model",
+          "settings": {
+            "$ref": "settings.model",
+            "extend": {
+              "emissive": "#333333",
+              "roughness": 0.25
+            }
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/oropress/01.jpg",
+            "source": "cases/oropress.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Click & drag to explore a world of colours! A digital yet extremely authentic take on high quality finishings.",
+          "text2": "The idea behind our project for Oro Press was playing with interaction, magic, and shades that speak for themselves.<br><br>The endless 3D colors we developed let the users have a taste of the perfectly translated colours produced by the brand.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/oropress/02.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "See your true <b>colours</b>.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/oropress/01.jpg",
+          "source2": "cases/oropress/05.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "igoodi",
+      "contents": {
+        "client": "Igoodi",
+        "title": "<b>I</b>Goodi",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "https://www.igoodi.eu",
+        "description": "4D Body Scanning And Avatar Platform For B2B And B2C Markets. A High-Tech Project Factory."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "igoodi.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 1.18
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "Spheres",
+          "settings": {
+            "$ref": "settings.spheres",
+            "extend": {
+              "roughness": 0.2
+            }
+          }
+        },
+        {
+          "name": "CameraModel",
+          "geometry": "igoodi.model",
+          "settings": {
+            "$ref": "settings.model",
+            "extend": {
+              "glowColor": "#ffffff",
+              "glowEmissive": "#89dbf8",
+              "glowEmissiveIntensity": 2,
+              "glowMetalness": 1,
+              "glowRoughness": 1,
+              "glowToneMapped": false
+            }
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/igoodi/01.jpg",
+            "source": "cases/igoodi.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "Digital humanism at its best! A mission to give everyone their own avatar, a project to let people embrace their digital form.",
+          "text2": "The world we created for IGoodi brings the users deeper and deeper into sophisticated 3D scenarios.<br><br>We took the art direction of the project on another level giving life to a complete and fulfilling digital environment with its own physical rules.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/igoodi/02.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Dive into<br>high-tech</b>.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/igoodi/03.jpg",
+          "source2": "cases/igoodi/06.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "mausoleum",
+      "contents": {
+        "client": "Havas",
+        "title": "<b>Mausoleum</b> of Augustus",
+        "role": "UX / UI / Development / 3D Production",
+        "link": "http://experience.mausoleodiaugusto.it/en/",
+        "description": "An Interactive Journey Through The Mausoleum Of Augustus And The History Of Rome."
+      },
+      "components": [
+        {
+          "name": "Ground",
+          "geometry": "plane.model",
+          "settings": {
+            "$ref": "settings.ground"
+          }
+        },
+        {
+          "name": "Portal",
+          "geometry": "mausoleum.portal",
+          "settings": {
+            "$ref": "settings.portal"
+          }
+        },
+        {
+          "name": "Smoke",
+          "settings": {
+            "$ref": "settings.smoke",
+            "extend": {
+              "radius": 1.04
+            }
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles"
+          }
+        },
+        {
+          "name": "DisplaceModel",
+          "geometry": "mausoleum.model",
+          "settings": {
+            "$ref": "settings.model"
+          }
+        },
+        {
+          "name": "Fog",
+          "settings": {
+            "$ref": "settings.fog"
+          }
+        }
+      ],
+      "builder": [
+        {
+          "type": "Hero",
+          "video": {
+            "poster": "cases/mausoleum/01.jpg",
+            "source": "cases/mausoleum.mp4"
+          }
+        },
+        {
+          "type": "DoubleText",
+          "text1": "History can be a futuristic experience too! A walk across art, space and time like it has never been done before.",
+          "text2": "We wanted to give Mausoleo UX a timeless and striking experience with truly evocative animations of ancient architecture.<br><br>The project features special motions that enhance the feeling of a monument going through time decomposition and fragmentation.",
+          "rowstart": [2, 4]
+        },
+        {
+          "type": "Image",
+          "source": "cases/mausoleum/01.jpg",
+          "orientation": "landscape",
+          "rowstart": [1, 1],
+          "rowspan": [3, 6]
+        },
+        {
+          "type": "Quote",
+          "text": "Start time<br><b>traveling now</b>.",
+          "rowstart": [2, 3]
+        },
+        {
+          "type": "DoubleImage",
+          "source1": "cases/mausoleum/03.jpg",
+          "source2": "cases/mausoleum/04.jpg"
+        }
+      ]
+    },
+    {
+      "uuid": "underground",
+      "contents": {
+        "blocks": [
+          {
+            "headline": "A Digital Designer and a Creative Developer, in love with Digital Beauty and Technology.",
+            "subheadline": "Uprising™ is a welded duo that partners with Agencies and Brands in their quest for unconventional paths by creating high-end projects that inspire the Digital Humus."
+          },
+          {
+            "subheadline": "Our riot is silent, we move in the shadows. We spent over 15 years behind the scenes of great interactive experiences partnering with ambitious teams and global brands that earned us the most prestigious awards around the world.",
+            "headline": "The Cannes Lions, The Webby Awards, The One Show Awards, Awwwards, and TheFWA."
+          },
+          {
+            "headline": "WebGL Projects, Product Websites, Design Systems, UX/UI Design, 3D Productions, and Headless CMS.",
+            "subheadline": "Create. Together."
+          },
+          {
+            "subheadline": "Based in Milan, available worldwide.",
+            "headline": "Are you looking for a great idea or a Creative Production partner to bring yours to life?<br>Do Not Hesitate.",
+            "contacts": "Contact Us"
+          }
+        ]
+      },
+      "components": [
+        {
+          "name": "Underground",
+          "geometry": "underground.model",
+          "settings": {
+            "envMapRef": "cube",
+            "aoMapRef": "underground-ao",
+            "bumpMapRef": "underground-bump",
+            "roughnessMapRef": "underground-roughness",
+            "normalMapRef": "normal",
+            "fogColor": "#000000",
+            "fogNear": 4.5,
+            "fogFar": 5.5,
+            "lightColor": "#ff7442",
+            "lightIntensity": 3,
+            "panelsColor": "#ffffff",
+            "panelsEmissive": "#ffcdbc",
+            "panelsEmissiveIntensity": 1.8,
+            "boxesColor": "#ff4400",
+            "boxesEmissive": "#000000",
+            "boxesBumpMapScale": 0.015,
+            "boxesAoMapIntensity": 1.5,
+            "boxesRoughness": 0.4,
+            "boxesMetalness": 1
+          }
+        },
+        {
+          "name": "Sparkles",
+          "settings": {
+            "$ref": "settings.sparkles",
+            "extend": {
+              "color": "#ffcdbc",
+              "count": 500,
+              "scale": 7,
+              "position": {
+                "x": 0,
+                "y": -4,
+                "z": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "uuid": "showreel",
+      "components": [
+        {
+          "name": "Upperground"
+        }
+      ]
+    },
+    {
+      "uuid": "upperground",
+      "components": [
+        {
+          "name": "Upperground"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "camera": {
+      "fov": {
+        "mobile": [55, 375],
+        "desktop": [40, 1440]
+      },
+      "near": 0.01,
+      "far": 10
+    },
+    "ground": {
+      "color": "#ffffff",
+      "normal": "normal",
+      "mirror": 0.92,
+      "metalness": 0.98,
+      "roughness": 0.98,
+      "mixStrength": 24,
+      "mixContrast": 0.98,
+      "normalScale": 0.08,
+      "repeat": 8,
+      "visible": true
+    },
+    "portal": {
+      "color": "#42cdff",
+      "emissive": "#ace9ff",
+      "emissiveIntensity": 1.8,
+      "intensity": 4,
+      "toneMapped": false,
+      "visible": true
+    },
+    "smoke": {
+      "texture": "smoke",
+      "displacement": "noise",
+      "color": "#009cd5",
+      "count": 8,
+      "opacity": 0.6,
+      "radius": 1,
+      "scale": 0.75,
+      "speed": 0.12,
+      "noise": 0.2,
+      "noiseIntensity": 0.04,
+      "offset": {
+        "x": 1,
+        "y": 0.32,
+        "z": 0.64
+      },
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "sparkles": {
+      "texture": "spark",
+      "color": "#ace9ff",
+      "count": 100,
+      "opacity": 0.98,
+      "scale": 2,
+      "size": 0.15,
+      "glow": 1.2,
+      "speed": 0.2,
+      "noise": 1.2,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "fog": {
+      "color": "#000000",
+      "near": 4.3,
+      "far": 9.3
+    },
+    "spheres": {
+      "color": "#333333",
+      "count": 4,
+      "emissive": "#000000",
+      "emissiveIntensity": 1,
+      "envMapRef": "cube",
+      "metalness": 1,
+      "roughness": 0,
+      "toneMapped": true
+    },
+    "model": {
+      "color": "#333333",
+      "emissive": "#000000",
+      "emissiveIntensity": 1,
+      "envMapRef": "cube",
+      "metalness": 1,
+      "roughness": 0,
+      "toneMapped": true
+    },
+    "float": {
+      "speed": 2,
+      "rotationIntensity": 1,
+      "floatIntensity": 0.1,
+      "floatingRangeMin": 1,
+      "floatingRangeMax": 2
+    },
+    "effects": {
+      "rgbSplit": {
+        "intensity": 0.08
+      },
+      "fluid": {
+        "iterations": 5,
+        "densityDissipation": 0.97,
+        "velocityDissipation": 0.98,
+        "pressureDissipation": 0.8,
+        "curlStrength": 20,
+        "radius": 0.2,
+        "debug": false
+      },
+      "bloom": {
+        "intensity": 2.8,
+        "intensityOffset": 1.2,
+        "luminanceThreshold": 0.76,
+        "luminanceSmoothing": 0.86
+      },
+      "vignette": {
+        "offset": 0.4,
+        "darkness": 0.6
+      },
+      "toneMapping": {
+        "middleGrey": 0.4,
+        "adaptive": true
+      },
+      "colorCorrection": {
+        "hue": 0,
+        "saturation": -0.05
+      },
+      "noise": {
+        "opacity": 0.5,
+        "premultiply": true
+      },
+      "lut": {
+        "texture": "lut.cube"
+      }
+    }
+  },
+  "locale": {
+    "shared": {
+      "cta_project": "View Project",
+      "cta_website": "Visit Website",
+      "cta_scroll": "Scroll Down To Explore",
+      "cta_swipe": "Drag To Explore",
+      "prefix_work_client": "Client",
+      "prefix_work_role": "Uprising Role"
+    },
+    "header": {
+      "about": "About",
+      "works": "Works",
+      "reel": "Showreel"
+    },
+    "footer": {
+      "email": { "label": "uprising@uprsg.com", "href": "mailto:uprising@uprsg.com" },
+      "privacy": { "label": "Privacy Policy", "href": "pdf/privacy-policy.pdf" },
+      "colophon": "Uprising SRL VAT 03935440549"
+    }
+  }
+}
